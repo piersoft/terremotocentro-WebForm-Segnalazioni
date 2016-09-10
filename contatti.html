@@ -38,8 +38,6 @@
     <link rel="stylesheet" href="https://joker-x.github.io/Leaflet.geoCSV/lib/MarkerCluster.Default.css" />
     <!--[if lte IE 8]> <link rel="stylesheet" href="https://joker-x.github.io/Leaflet.geoCSV/lib/MarkerCluster.Default.ie.css" /> <![endif]-->
     <script src="https://joker-x.github.io/Leaflet.geoCSV/lib/leaflet.markercluster-src.js"></script>
-    <script src="src/leaflet-search.js"></script>
-    <link rel="stylesheet" href="src/leaflet-search.css" />
 </head>
 <body>
 <main>
@@ -74,21 +72,6 @@
     var esi = L.tileLayer.wms("http://mapwarper.net/maps/wms/15512?request=GetCapabilities&service=WMS&version=1.1.1?", {
         layers: 'rv1',
         format: 'image/jpeg',attribution: '<a href="http://mapwarper.net/maps/15512#Preview_Map_tab" target="_blank">MapWraper with image uploaded by Napo from ESI<b>after</b> the earthquake</a> | <a href="http://openstreetmap.org">OSM</a> powered by @piersoft'});
-
-    map.addControl( new L.Control.Search({
-        url: 'http://nominatim.openstreetmap.org/search?format=json&q={s}',
-        jsonpParam: 'json_callback',
-        propertyName: 'display_name',
-        propertyLoc: ['lat','lon'],
-        circleLocation: true,
-        markerLocation: false,
-        autoType: false,
-        autoCollapse: true,
-        minLength: 2,
-        zoom:18
-    }) );
-
-
     var realvista = L.tileLayer.wms("http://213.215.135.196/reflector/open/service?", {
         layers: 'rv1',
         format: 'image/jpeg',attribution: '<a href="http://www.realvista.it/website/Joomla/" target="_blank">RealVista &copy; CC-BY Tiles</a> | <a href="http://openstreetmap.org">OSM</a> contr.s'
