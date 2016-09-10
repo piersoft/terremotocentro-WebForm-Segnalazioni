@@ -70,7 +70,7 @@
         zoomControl: true
     }).setView([42.6297405,13.2896061], 16);
 
-    var osm=L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {maxZoom: 19, attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a> powered by @piersoft'}).addTo(map);
+    var osm=L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {maxZoom: 19, attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a> powered by @piersoft'}).addTo(map);
     var esi = L.tileLayer.wms("http://mapwarper.net/maps/wms/15512?request=GetCapabilities&service=WMS&version=1.1.1?", {
         layers: 'rv1',
         format: 'image/jpeg',attribution: '<a href="http://mapwarper.net/maps/15512#Preview_Map_tab" target="_blank">MapWraper with image uploaded by Napo from ESI<b>after</b> the earthquake</a> | <a href="http://openstreetmap.org">OSM</a> powered by @piersoft'});
