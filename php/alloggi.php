@@ -32,8 +32,8 @@ if (in_array('curl', get_loaded_extensions())) {
         $file = $_FILES["image"]["tmp_name"];
         $immagine = "";
         if (!empty($file)) {
-            $target_dir = "img/";
-            $target_file = $target_dir . "$ora" . urlencode(basename($_FILES["image"]["name"]));
+            $target_dir = "../img/";
+            $target_file = $target_dir . "$ora" . basename($_FILES["image"]["name"]);
             $uploadOk = 1;
             $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 
@@ -67,7 +67,7 @@ if (in_array('curl', get_loaded_extensions())) {
                 exit;
             } else {
                 if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
-                    $immagine = "https://terremoto.francescopinzauti.com/$target_file";
+                    $immagine = "https://terremoto.francescopinzauti.com/img/". "$ora" . rawurlencode(basename($_FILES["image"]["name"]));
                 } else {
                     http_response_code(400);
                     echo "Errore nel caricamento dell'immagine.";

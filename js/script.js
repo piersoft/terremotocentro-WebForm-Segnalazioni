@@ -189,3 +189,8 @@ $('.terremoto').on('keyup keypress', function (e) {
         return false;
     }
 });
+function Cancella() {
+    $('#us3-address').val('');
+    $('#us3-lat').val('');
+    $('#us3-lon').val('');
+}
