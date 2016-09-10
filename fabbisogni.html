@@ -91,7 +91,7 @@
     marker.on('dragend', function(event){
         var marker = event.target;
         var position = marker.getLatLng();
-        var addr='http://nominatim.openstreetmap.org/reverse?format=json&email=piersoft2@gmail.com&lat='+position.lat+'&lon=' + position.lng+'&zoom=18&addressdetails=1';
+        var addr='https://nominatim.openstreetmap.org/reverse?format=json&email=piersoft2@gmail.com&lat='+position.lat+'&lon=' + position.lng+'&zoom=18&addressdetails=1';
 
         //  addr_search(position.lat,position.lng);
         $.getJSON(addr, function(data) {
