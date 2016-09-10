@@ -95,10 +95,7 @@
 
         //  addr_search(position.lat,position.lng);
         $.getJSON(addr, function(data) {
-            var indirizzo=data.display_name;
-            console.log(indirizzo);
-            console.log(position.lat+','+position.lng);
-            document.getElementById("us3-address").value = indirizzo;
+            document.getElementById("us3-address").value = data.display_name;
             document.getElementById("us3-lat").value = position.lat;
             document.getElementById("us3-lon").value = position.lng;
         });
