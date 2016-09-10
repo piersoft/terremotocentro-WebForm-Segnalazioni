@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c143977-a052-417a-8f55-c8dc961621b8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alloggi.html" afterPath="$PROJECT_DIR$/alloggi.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contatti.html" afterPath="$PROJECT_DIR$/contatti.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/donazioni.html" afterPath="$PROJECT_DIR$/donazioni.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fabbisogni.html" afterPath="$PROJECT_DIR$/fabbisogni.html" />
-    </list>
+    <list default="true" id="6c143977-a052-417a-8f55-c8dc961621b8" name="Default" comment="" />
     <ignored path="Segnalazioni-Terremoto.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -253,15 +247,15 @@
       <workItem from="1473527328390" duration="2018000" />
       <workItem from="1473529444672" duration="43000" />
       <workItem from="1473530117934" duration="686000" />
-      <workItem from="1473531105756" duration="268000" />
+      <workItem from="1473531105756" duration="387000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3015000" />
+    <option name="totallyTimeSpent" value="3134000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
